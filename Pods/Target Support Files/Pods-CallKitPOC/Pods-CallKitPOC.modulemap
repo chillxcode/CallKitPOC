@@ -1,0 +1,6 @@
+framework module Pods_CallKitPOC {
+  umbrella header "Pods-CallKitPOC-umbrella.h"
+
+  export *
+  module * { export * }
+}

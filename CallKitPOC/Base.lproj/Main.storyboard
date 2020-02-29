@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MainVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="CallKitPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="740-hJ-6K6">
+                                <rect key="frame" x="16" y="16" width="343" height="635"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOW-pp-T7Y">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="89"/>
+                                        <color key="backgroundColor" red="0.97949724740932642" green="0.97949724740932642" blue="0.97949724740932642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Add User"/>
+                                        <connections>
+                                            <action selector="addUserClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hfK-v4-RTm"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2j-gd-hal">
+                                        <rect key="frame" x="0.0" y="109" width="343" height="89.5"/>
+                                        <color key="backgroundColor" red="0.97949724740932642" green="0.97949724740932642" blue="0.97949724740932642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="List Users"/>
+                                        <connections>
+                                            <action selector="listUsersClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xMM-2q-lp3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARW-v0-k8v">
+                                        <rect key="frame" x="0.0" y="218.5" width="343" height="89"/>
+                                        <color key="backgroundColor" red="0.97949724740932642" green="0.97949724740932642" blue="0.97949724740932642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Update User"/>
+                                        <connections>
+                                            <action selector="updateUserClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8pT-eW-wMU"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mwW-ad-Xaw">
+                                        <rect key="frame" x="0.0" y="327.5" width="343" height="89"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2L-cY-JoA">
+                                                <rect key="frame" x="0.0" y="0.0" width="166.5" height="89"/>
+                                                <color key="backgroundColor" red="0.97949724740932642" green="0.97949724740932642" blue="0.97949724740932642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                                <state key="normal" title="Delete User"/>
+                                                <connections>
+                                                    <action selector="deleteUserClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FBb-dn-u1T"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZUz-yz-nwN">
+                                                <rect key="frame" x="176.5" y="0.0" width="166.5" height="89"/>
+                                                <color key="backgroundColor" red="0.97949724739999999" green="0.97949724739999999" blue="0.97949724739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                                <state key="normal" title="Delete Users"/>
+                                                <connections>
+                                                    <action selector="deleteUsersClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qKS-5e-yx1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTn-jK-Ubj">
+                                        <rect key="frame" x="0.0" y="436.5" width="343" height="89.5"/>
+                                        <color key="backgroundColor" red="0.97949724740932642" green="0.97949724740932642" blue="0.97949724740932642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                        <state key="normal" title="Refresh CallKit"/>
+                                        <connections>
+                                            <action selector="refreshCallKitClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YwH-Wk-SGS"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="SE9-wo-KC5">
+                                        <rect key="frame" x="0.0" y="546" width="343" height="89"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqb-Wj-q6k">
+                                                <rect key="frame" x="0.0" y="0.0" width="166.5" height="89"/>
+                                                <color key="backgroundColor" red="0.97949724740932642" green="0.97949724740932642" blue="0.97949724740932642" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                                <state key="normal" title="CallKit Info"/>
+                                                <connections>
+                                                    <action selector="callKitInfoClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9mq-Tc-sYo"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzb-xP-2jw">
+                                                <rect key="frame" x="176.5" y="0.0" width="166.5" height="89"/>
+                                                <color key="backgroundColor" red="0.97949724739999999" green="0.97949724739999999" blue="0.97949724739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                                <state key="normal" title="Delete Infos"/>
+                                                <connections>
+                                                    <action selector="deleteInfosClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OfK-qm-brD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="740-hJ-6K6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="Npt-Es-NBy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="740-hJ-6K6" secondAttribute="trailing" constant="16" id="ULY-84-TdP"/>
+                            <constraint firstItem="740-hJ-6K6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="mD0-g3-49N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="740-hJ-6K6" secondAttribute="bottom" constant="16" id="sMd-o4-7Bw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <segue destination="w8V-YG-J9E" kind="show" identifier="ToDetail" id="qRC-rM-8Ir"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="138"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="EX1-fJ-Dnk">
+            <objects>
+                <viewController id="w8V-YG-J9E" customClass="DetailVC" customModule="CallKitPOC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Te-7C-5l9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="TextView" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="r13-eo-Y4z">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Z63-LX-KKm" firstAttribute="trailing" secondItem="r13-eo-Y4z" secondAttribute="trailing" id="Frw-no-khF"/>
+                            <constraint firstItem="r13-eo-Y4z" firstAttribute="leading" secondItem="Z63-LX-KKm" secondAttribute="leading" id="hlU-mR-Dby"/>
+                            <constraint firstItem="Z63-LX-KKm" firstAttribute="bottom" secondItem="r13-eo-Y4z" secondAttribute="bottom" id="oBw-V2-kMe"/>
+                            <constraint firstItem="r13-eo-Y4z" firstAttribute="top" secondItem="Z63-LX-KKm" secondAttribute="top" id="vjP-Ec-Poe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Z63-LX-KKm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="L7B-fz-ICb"/>
+                    <connections>
+                        <outlet property="textView" destination="r13-eo-Y4z" id="V0h-kw-T60"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gm-q9-vna" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="908" y="137"/>
+        </scene>
+    </scenes>
+</document>
